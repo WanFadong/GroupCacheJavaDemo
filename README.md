@@ -1,0 +1,3 @@
+提供了一个使用GroupCache-Java的Demo。
+
+功能：从GroupCache中获取某个单词在书中出现的次数。
