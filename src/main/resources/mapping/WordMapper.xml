@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.somewan.groupcache.data.dao.WordDao">
+
+    <!--<resultMap id="WordMap" type="com.somewan.groupcache.data.model.Word">-->
+        <!--<id column="id" property="id" jdbcType="INTEGER" />-->
+        <!--<id column="count1" property="count1" jdbcType="INTEGER" />-->
+        <!--<id column="count2" property="count2" jdbcType="INTEGER" />-->
+        <!--<id column="count3" property="count3" jdbcType="INTEGER" />-->
+        <!--<id column="count" property="count" jdbcType="INTEGER" />-->
+    <!--</resultMap>-->
+
+    <select id="insertWord">
+        INSERT INTO word_count(word, count1, count2, count3, count)
+        VALUES (#{word}, #{count1}, #{count2}, #{count3}, #{count})
+    </select>
+
+</mapper>
